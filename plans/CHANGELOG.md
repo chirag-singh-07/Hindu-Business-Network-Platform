@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-26 — GitHub project README
+- Added root `README.md` with product overview, chosen MongoDB/Flutter stack, backend setup, current implementation limits, documentation links and security principles.
+
 ## 2026-11-25 — User-selected database and mobile stack
 - Replaced the initial PostgreSQL/Prisma backend scaffold with MongoDB/Mongoose and local replica-set configuration.
 - Updated API health check, package manifest/lockfile, environment variables, database/architecture docs, risks and current status.
