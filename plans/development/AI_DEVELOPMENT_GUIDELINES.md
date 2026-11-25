@@ -1,0 +1,3 @@
+# AI Development Guidelines
+Start by reading current status, changelog, roadmap, decisions and relevant checkpoint. Preserve the selected MongoDB/Mongoose backend and Flutter/Dart mobile stack unless the owner changes them. Inspect files before edits and implement only the approved phase. Keep server/client policies aligned; protect private data and secrets. Record files changed, decisions, incomplete tasks, known issues and exact next action. Distinguish proposed, implemented and verified. Do not install untrusted skills. At session end update status, checkpoint, changelog and technical docs.
+

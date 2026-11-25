@@ -1,0 +1,23 @@
+# Node / Nest backend
+**/node_modules/
+**/dist/
+**/coverage/
+
+# Environment secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Flutter / Dart generated files
+**/.dart_tool/
+**/build/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock.tmp
+**/android/local.properties
+**/ios/Flutter/Generated.xcconfig
+
+# Local editor and OS files
+**/.idea/
+**/.DS_Store
+**/Thumbs.db

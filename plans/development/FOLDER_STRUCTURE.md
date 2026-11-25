@@ -1,0 +1,2 @@
+# Folder Structure
+backend/ API, domains and workers; website/ public and member web; mobile-app/ Flutter/Dart member app; admin-panel/ staff console (existing name preserved); assets/ approved brand files; plans/ product/technical docs and checkpoints. `plans/` contains architecture, backend, website, mobile-app, admin, features, checkpoints, development and ui-prompts. Share API contracts and design tokens where stable; Flutter UI remains native to Flutter.

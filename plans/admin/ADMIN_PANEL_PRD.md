@@ -1,0 +1,4 @@
+# Admin Panel PRD and Permissions
+Build in existing `admin-panel/`. Separate authentication, MFA, short sessions and least-privilege roles. Modules: operational metrics (real measured data), verification, member status, reports/moderation, ad review, plans/subscriptions/payment reconciliation, reputation rules/badges, notification templates, audit log, privacy requests. No unrestricted message access; exceptional content review requires authorized case, purpose and audit.
+
+Roles: owner (configuration/role assignment), support (limited account assistance), verification reviewer, content moderator, ad reviewer, billing operator (financial metadata only), read-only auditor. Separate high-impact permissions and maker-checker for refunds, roles and plan changes. Checklist: [ ] action permission map [ ] MFA/audit [ ] PII masking [ ] approval trails [ ] direct-object authorization checks.

@@ -1,0 +1,4 @@
+# Authentication and Authorization
+Verify email/phone according to owner policy; hash passwords with Argon2id or vetted framework default; throttle login/recovery and use generic errors. Rotate refresh tokens, hash at rest, detect reuse, revoke sessions. Browser sessions use Secure HttpOnly SameSite cookies and CSRF protection; mobile uses OS secure storage. Admin MFA and stronger session rules. Social login only after account-link and recovery decisions.
+
+Authorization is deny-by-default: staff RBAC plus resource policies for owner, status, relationship, visibility, entitlement and state. Frontend checks are explanatory only. Lifecycle: pending verification, active, suspended/locked, deletion requested, deleted/anonymized subject to retention. Support recovery, session revocation, export/deletion, audit sensitive admin actions, redact tokens/PII from logs.

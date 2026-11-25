@@ -1,0 +1,11 @@
+# Coding Standards
+- TypeScript strict mode; consistent lint/format and small components/modules.
+- Separate UI, domain logic, persistence and external adapters.
+- Validate at every trust boundary; safe errors, no PII/secrets in logs.
+- Server authorization on every protected operation; explicit response DTOs.
+- Database migrations for schema changes; `.env.example` safe placeholders only.
+- Synthetic data only in development; never fabricate production analytics.
+- Accessible responsive UI with loading, empty, success and error states.
+- Update API/schema docs and permissions with feature changes.
+- Read status/checkpoint/ADRs before editing; document decisions and unfinished work.
+- Mark completion only with evidence; preserve working setup and compatibility where practical.

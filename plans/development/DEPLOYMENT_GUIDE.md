@@ -1,0 +1,2 @@
+# Deployment Guide (Draft)
+Provider/region and MongoDB topology are undecided. Before production select region, secret manager, TLS/WAF, private replica-set/cluster network, media policy, webhook verification, versioned schema/backfill and rollback approach, backups/restore drills, monitoring, incident plans, legal policies, staffing and recovery targets. Deploy through staging; rehearse backfills/rollback and verify health. Do not launch until security, legal and operational gates pass.
