@@ -1,17 +1,17 @@
 # Phase 13 — LANDING WEBSITE
-**Status:** Not started. **Depends on:** prior phases and relevant product/legal decisions.
+**Status:** Implementation started; compilation and lint passed, build type-check and browser verification pending. **Depends on:** prior phases and relevant product/legal decisions.
 
 ## Objective
 Deliver the approved scope for LANDING WEBSITE. See ../ROADMAP.md, product and domain specifications. Do not mark completion until evidence is recorded.
 
 ## Scope and implementation
-- [ ] Confirm phase requirements, owners and dependencies.
-- [ ] Design implementation and record material decisions (ADR).
-- [ ] Implement only approved backend, data/API, client and admin scope for this phase.
-- [ ] Update affected product/technical documentation and API/schema contracts.
+- [x] Confirm phase requirements, owners and dependencies.
+- [x] Design implementation and record material decisions (ADR).
+- [x] Implement approved public informational landing page scope; registration and subscriptions remain unavailable.
+- [x] Update affected product/technical documentation; no API/schema changes.
 
 ## Files/modules
-To be determined during phase planning; record exact changed files before closing this checkpoint.
+`website/src/app/` (layout, landing page, styles, robots, sitemap), `website/src/components/` (header and motion), `website/public/` (logo and favicon), website package/configuration/README, root README, and current status/changelog documentation.
 
 ## Data and API changes
 Document migrations, backfill/retention implications and endpoint/event changes here before implementation.
@@ -24,7 +24,7 @@ Document migrations, backfill/retention implications and endpoint/event changes 
 - [ ] CURRENT_STATUS.md, this checkpoint, and CHANGELOG.md updated.
 
 ## Known issues
-None established; update with evidence.
+Next.js compilation and ESLint succeeded before the clean install attempt. The website dependency audit reports zero vulnerabilities after upgrading Sharp to 0.35.5. Build type-checking remains unverified because npm did not complete a clean install and package files were left incomplete. Browser rendering remains unverified. No member onboarding endpoint or subscription flow is implemented.
 
 ## Next phase dependency
 Record completed gates, outstanding issues and explicit next task. This phase remains incomplete until all applicable criteria are evidenced.

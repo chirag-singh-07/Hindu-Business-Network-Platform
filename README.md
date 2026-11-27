@@ -2,14 +2,14 @@
 
 A trusted digital business network for Hindu business owners, entrepreneurs, professionals, traders, manufacturers, service providers, and organizations. The platform is planned for web and mobile, with shared accounts, profiles, connections, membership, messaging, reputation, and advertising.
 
-> **Project status:** Planning is complete and the backend foundation is scaffolded. Authentication and product features are not implemented yet. The member website, public landing website, admin panel, and Flutter app are still planned. See [Current Status](plans/CURRENT_STATUS.md) before using or extending the project.
+> **Project status:** Planning is complete; the NestJS/MongoDB backend foundation and public Next.js landing page are scaffolded. Authentication and member features are not implemented yet. The member website, admin panel, and Flutter app are still planned. See [Current Status](plans/CURRENT_STATUS.md) before using or extending the project.
 
 ## Product surfaces
 
 - **Backend API:** NestJS, TypeScript, MongoDB, and Mongoose.
 - **Member mobile app:** Flutter and Dart (planned; not scaffolded yet).
 - **Member website:** Next.js and TypeScript (planned).
-- **Public landing website:** Next.js and TypeScript (planned).
+- **Public landing website:** Next.js and TypeScript (informational landing implemented; onboarding is not live).
 - **Admin panel:** planned in the existing `admin-panel/` directory.
 
 All clients will use the same server-authoritative API. Mobile and web clients must never connect directly to MongoDB.
@@ -23,7 +23,7 @@ All clients will use the same server-authoritative API. Mobile and web clients m
 | Database | MongoDB 8.0, Mongoose 9, Nest Mongoose integration |
 | Local database | MongoDB single-node replica set through Docker Compose |
 | Mobile | Flutter and Dart |
-| Web | Next.js and TypeScript (planned) |
+| Web | Next.js and TypeScript (public landing implemented; member application planned) |
 | API docs | Swagger/OpenAPI in non-production environments |
 
 The backend stack decision and tradeoffs are recorded in [ADR-001](plans/architecture/ADR-001-BACKEND-STACK.md). MongoDB collections and Mongoose schemas will be added alongside the feature checkpoints that own them.
@@ -32,7 +32,7 @@ The backend stack decision and tradeoffs are recorded in [ADR-001](plans/archite
 
 ```text
 backend/       NestJS API scaffold, MongoDB connection and local Compose setup
-website/       Planned member and public web applications
+website/       Public Next.js landing site; member web application planned
 mobile-app/    Planned Flutter/Dart member app
 admin-panel/  Planned staff console
 assets/        Brand assets, including the HBN logo
@@ -40,6 +40,8 @@ plans/         Product requirements, architecture, feature specs and checkpoints
 ```
 
 The application directories may be empty until their implementation phases begin. The existing directory names `plans/` and `admin-panel/` are intentionally preserved.
+
+For public landing site setup and deployment notes, see [website/README.md](website/README.md).
 
 ## Backend setup
 

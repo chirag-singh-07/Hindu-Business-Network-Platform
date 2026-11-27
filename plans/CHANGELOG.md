@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-26 — Public landing website
+- Added a responsive Next.js public landing page with HBN branding, editorial typography, community and membership content, accessible FAQ disclosures, and clear onboarding status.
+- Added deferred GSAP/ScrollTrigger reveals, Animate.css entrance effects, reduced-motion handling, SEO metadata, sitemap and robots routes, image optimization, baseline security headers, and setup documentation.
+- Updated the root README and current project status. Fixed the npm-audit finding by moving Sharp to the patched 0.35.5 release line; website dependency audit now reports zero vulnerabilities.
+- Next.js compilation and ESLint succeeded. Full build type-checking remains unverified because npm could not complete a clean dependency install and Next.js type declarations are unavailable.
+
 ## 2026-11-26 — GitHub project README
 - Added root `README.md` with product overview, chosen MongoDB/Flutter stack, backend setup, current implementation limits, documentation links and security principles.
 
